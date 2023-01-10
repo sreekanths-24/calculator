@@ -10,7 +10,12 @@ function clearScreen() {
 
 function findResult() {
     var result = eval(display.value);
-    display.value = result;
+    
+    if (result == NaN) {
+        display.value = 'Undifined Answer';
+    } else {
+        display.value = result;
+    }
 }
 
 function backSpace() {
