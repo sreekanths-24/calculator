@@ -5,35 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- == all the majour stylesheets == -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
     
+    <!-- == google font == -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        
     <title>Sreekanth's calculator</title>
 </head>
 <body>
     <main>
         <input type="text" class="display">
 
-        <input type="button" value="9" id="no9" class="btn btn-no" placeholder="9" onclick="btnClick(value)"/>
-        <input type="button" value="8" id="no8" class="btn btn-no" placeholder="8" onclick="btnClick(value)"/>
-        <input type="button" value="7" id="no7" class="btn btn-no" placeholder="7" onclick="btnClick(value)"/>
-        <input type="button" value="6" id="no6" class="btn btn-no" placeholder="6" onclick="btnClick(value)"/>
-        <input type="button" value="5" id="no5" class="btn btn-no" placeholder="5" onclick="btnClick(value)"/>
-        <input type="button" value="4" id="no4" class="btn btn-no" placeholder="4" onclick="btnClick(value)"/>
-        <input type="button" value="3" id="no3" class="btn btn-no" placeholder="3" onclick="btnClick(value)"/>
-        <input type="button" value="2" id="no2" class="btn btn-no" placeholder="2" onclick="btnClick(value)"/>
-        <input type="button" value="1" id="no1" class="btn btn-no" placeholder="1" onclick="btnClick(value)"/>
-        <input type="button" value="0" id="no0" class="btn btn-no" placeholder="0" onclick="btnClick(value)"/>
-
-        <input type="button" value="+" id="plus" class="btn btn-operator" placeholder="+" onclick="btnClick(value)"/>
-        <input type="button" value="-" id="minus" class="btn btn-operator" placeholder="-" onclick="btnClick(value)"/>
-        <input type="button" value="*" id="multiply" class="btn btn-operator" placeholder="*" onclick="btnClick(value)"/>
-        <input type="button" value="/" id="divide" class="btn btn-operator" placeholder="/" onclick="btnClick(value)"/>
-        <input type="button" value="%" id="modulus" class="btn btn-operator" placeholder="%" onclick="btnClick(value)"/>
+        <div class="row1 rows">
+            <input type="button" value="9" id="no9" class="btn btn-no" placeholder="9" onclick="btnClick(value)"/>
+            <input type="button" value="8" id="no8" class="btn btn-no" placeholder="8" onclick="btnClick(value)"/>
+            <input type="button" value="7" id="no7" class="btn btn-no" placeholder="7" onclick="btnClick(value)"/>
+            <input type="button" value="+" id="plus" class="btn btn-operator" placeholder="+" onclick="btnClick(value)"/>
+        </div>
         
-        <input type="button" value="C" id="clear" class="btn btn-helper" placeholder="C" onclick="clearScreen()"/>
-        <!-- <input type="button" value="B" id="back" class="btn btn-helper" placeholder="B" onclick="backSpace()"/> -->
-        <input type="button" value="=" id="equalto" class="btn btn-helper" placeholder="=" onclick="findResult()"/>
+        <div class="row2 rows">
+            <input type="button" value="6" id="no6" class="btn btn-no" placeholder="6" onclick="btnClick(value)"/>
+            <input type="button" value="5" id="no5" class="btn btn-no" placeholder="5" onclick="btnClick(value)"/>
+            <input type="button" value="4" id="no4" class="btn btn-no" placeholder="4" onclick="btnClick(value)"/>
+            <input type="button" value="-" id="minus" class="btn btn-operator" placeholder="-" onclick="btnClick(value)"/>
+        </div>
+
+        <div class="row3 rows">
+            <input type="button" value="3" id="no3" class="btn btn-no" placeholder="3" onclick="btnClick(value)"/>
+            <input type="button" value="2" id="no2" class="btn btn-no" placeholder="2" onclick="btnClick(value)"/>
+            <input type="button" value="1" id="no1" class="btn btn-no" placeholder="1" onclick="btnClick(value)"/>
+            <input type="button" value="*" id="multiply" class="btn btn-operator" placeholder="*" onclick="btnClick(value)"/>
+        </div>
+
+        <div class="row4 rows">
+            <input type="button" value="=" id="equalto" class="btn btn-helper" placeholder="=" onclick="findResult()"/>
+            <input type="button" value="0" id="no0" class="btn btn-no" placeholder="0" onclick="btnClick(value)"/>
+            <input type="button" value="/" id="divide" class="btn btn-operator" placeholder="/" onclick="btnClick(value)"/>
+            <input type="button" value="%" id="modulus" class="btn btn-operator" placeholder="%" onclick="btnClick(value)"/>
+        </div>
+
+        <div class="row5 rows">
+            <input type="button" value="CLEAR" id="clear" class="btn btn-helper" placeholder="Clear" onclick="clearScreen()"/>
+            <input type="button" value="B" id="back" class="btn btn-helper" placeholder="B" onclick="backSpace()"/>
+        </div>
 
     </main>
     <script src="scripts/script.js"></script>
