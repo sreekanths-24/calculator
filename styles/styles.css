@@ -20,12 +20,14 @@ main{
     width: 100%;
     min-height: 50px;
     height: 20vh;
+    padding: 10px 20px;
     /* max-height: 90px; */
     font-size: 5rem;
     border: 1px solid black;
     border-radius: 10px;
     background-color: #a9a9a9;
     text-align: end;
+    outline: none;
 }
 
 .rows{
@@ -61,7 +63,6 @@ main{
 }
 
 #clear{
-    width: 74%;
     background-color: red;
 }
 

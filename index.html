@@ -43,15 +43,17 @@
         </div>
 
         <div class="row4 rows">
-            <input type="button" value="=" id="equalto" class="btn btn-helper" placeholder="=" onclick="findResult()"/>
+            <input type="button" value="00" id="no00" class="btn btn-no" placeholder="00" onclick="btnClick(value)"/>
             <input type="button" value="0" id="no0" class="btn btn-no" placeholder="0" onclick="btnClick(value)"/>
+            <input type="button" value="." id="nodot" class="btn btn-no" placeholder="." onclick="btnClick(value)"/>
             <input type="button" value="/" id="divide" class="btn btn-operator" placeholder="/" onclick="btnClick(value)"/>
-            <input type="button" value="%" id="modulus" class="btn btn-operator" placeholder="%" onclick="btnClick(value)"/>
         </div>
-
+        
         <div class="row5 rows">
-            <input type="button" value="CLEAR" id="clear" class="btn btn-helper" placeholder="Clear" onclick="clearScreen()"/>
+            <input type="button" value="=" id="equalto" class="btn btn-helper" placeholder="=" onclick="findResult()"/>
+            <input type="button" value="C" id="clear" class="btn btn-helper" placeholder="Clear" onclick="clearScreen()"/>
             <input type="button" value="B" id="back" class="btn btn-helper" placeholder="B" onclick="backSpace()"/>
+            <input type="button" value="%" id="modulus" class="btn btn-operator" placeholder="%" onclick="btnClick(value)"/>
         </div>
 
     </main>

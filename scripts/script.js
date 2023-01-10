@@ -14,8 +14,5 @@ function findResult() {
 }
 
 function backSpace() {
-    let a = [];
-    a = display.value.split('');
-    a.pop();
-    display.value = toString(a);
+    display.value = display.value.slice(0,-1);
 }
